@@ -1,0 +1,9 @@
+*.json
+.nrepl-port
+repl-port
+*.md
+*.edn
+*~
+project.clj
+target
+.gitignore.bak
