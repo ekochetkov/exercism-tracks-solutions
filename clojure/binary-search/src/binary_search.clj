@@ -9,9 +9,9 @@
      (let [m (int (/ (+ l r) 2)) ma (nth a m)]
        (cond
          (= ma v) m
+         (=  l r) (throw (new Exception "not found"))
          (> v ma) (recur v a (inc m) r)
          :else    (recur v a l (dec m))))))
 
 (defn middle [v]
   (int (/ (count v) 2)))
-
